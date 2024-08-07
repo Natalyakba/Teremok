@@ -1,0 +1,347 @@
+* {
+   padding: 0; /*внутренний*/
+   margin: 0; /*внешний*/
+   border: 0; /*граница*/
+}
+
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+nav, footer, header, aside{display: block; }
+
+html, body{
+height: 100%; width: 100%; 
+font-size: 100%; 
+line-height: 1; 
+font-size: 18px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0;border: 0;}
+a, a:visited{text-decoration: none;color: #209663;} 
+a:hover {text-decoration: none;} 
+ul li{list-style:none;} 
+img{vertical-align: top}
+h1, h2, h3, h4, h5, h6{font-size: inherit; font-weight: 400; }
+
+html, body{
+   height: 100%;
+   line-height: 1;
+   color: #375a38;
+}
+
+@font-face {
+   font-family: Avanturin;
+   src: url(/fonts/Avanturin.ttf);
+}
+
+
+.header{
+   height: 150px;
+   background:url(image/1686912274_celes-club-p-kholmi-risunok-risunok-krasivo-41.jpg);
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 50;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
+   
+}
+
+
+.header a{
+   font-size: 80px;
+   font-family: Avanturin;
+   color: #00ffff;
+   /* background-color: azure; */
+text-shadow: -3px -3px 0 hsl(80, 70%, 35%),
+-2px -2px 1px hsl(80, 70%, 35%),
+-2px -2px 2px hsl(80, 10%, 15%);
+   
+}
+
+body{
+   background: url(image/1667302897_24-celes-club-p-fon-s-ornamentom-krasivo-24.jpg) 0 0/100% 100% no-repeat fixed;
+   width:100%;
+}
+
+.container{
+   max-width: 1080px;
+   margin: 0px auto; 
+}
+
+.content{
+   background-color: rgba(205, 214, 219, 0.95);
+   padding: 200px 80px 100px 80px;
+   font-family: Avanturin;
+   font-size: 30px;
+   line-height: 45px;
+   
+}
+
+.teremok{
+   color: rgb(42, 145, 56);
+}
+
+.quote{
+   line-height: 45px;
+   color: #000000;
+   border:none;
+   font-size: 30px;
+   border-radius:20px;
+   margin: 5px 0px;
+   background-color: rgba(230, 230, 230,0.6);
+}
+
+.quote:hover{
+   font-size: 40px;
+}
+
+button{
+
+   border:none;
+   color:#209663;
+   font-size: 30px;
+   border-radius:20px;
+   background-color: rgb(144, 228, 75);
+   padding:10px;
+   box-shadow:0 0 15px 4px rgba(0,0,0,0.06); 
+}
+
+.hid_terem img{
+   width: 100%;
+   padding: 20px 0px;
+   border-radius:100px;
+}
+.hid_terem{
+   display: none;
+ 
+}
+
+.block_text {
+   display: none;
+}
+
+.animal{
+   /* color: #ff8000; */
+}
+
+.quiz{
+   background-color: #16d71699; 
+   padding: 60px;
+   border-radius:100px;
+   margin-top: 40px;
+
+}
+.question{
+   color: #00ffff;
+   text-shadow: -3px -3px 0 hsl(80, 70%, 35%),
+-2px -2px 1px hsl(80, 70%, 35%),
+-2px -2px 2px hsl(80, 10%, 15%);
+}
+
+.final{
+   text-align: center;
+}
+
+.container_hov {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .image {
+   position: absolute;
+  top: -2000px; /* Перемещаем изображение вне видимой области экрана */
+  left: -2000px;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+   
+ }
+ 
+ .hover-trigger:hover + .image {
+   opacity: 1;  
+   top: auto;
+   left: auto;
+   z-index: 3; 
+ }
+ 
+ .quote_image {
+   position: relative;
+   /* display: inline-block; */
+ }
+ 
+ .quote::before {
+   content: ""; 
+   display: block; 
+   position: absolute;
+   top: 50%;
+   left: -20px;
+   transform: translate(-50%, -50%);
+   width: 50px; 
+   height: 50px; 
+  
+   background-size: cover; 
+   background-color: transparent; 
+   border-radius: 50%; 
+ }
+
+ .quote1::before {
+   background-image: url('image/mouse.png');
+ }
+ .quote2::before {
+   background-image: url('image/frog.png'); 
+ }
+ .quote3::before {
+   background-image: url('image/hare.png'); 
+ }
+ .quote4::before {
+   background-image: url('image/fox.png'); 
+ }
+ .quote5::before {
+   background-image: url('image/wolf.png'); 
+ }
+ .quote6::before {
+   background-image: url('image/bear.png'); 
+ }
+
+ .up{
+   text-align: center;
+   padding: 30px;
+ }
+
+ .container_hov span{
+   border:none;
+   border-radius:20px;
+   padding:5px;
+   box-shadow:0 0 15px 4px rgba(0,0,0,0.1); 
+ }
+
+ .par{
+   margin: 30px 0px;
+ }
+
+ .name1, .name1shrt{
+   color: #7c7c7c;
+ }
+
+ .name2, .name2shrt{
+   color: #209663;
+ }
+ .name3, .name3shrt{
+   color: #077fff;
+ }
+ .name4, .name4shrt{
+   color: #ff7b00;
+ }
+ .name5, .name5shrt{
+   color: #686868;
+ }
+ .name6, .name6shrt{
+   color: #72451e;
+ }
+
+/* ---------------------table------------------------------ */ 
+
+.table{
+	border: 1px solid #eee;
+   border-radius: 20px;
+	table-layout: fixed;
+	width: 100%;
+	margin-bottom: 20px;
+   font-size: 18px;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+   border-radius: 20px;
+   text-align: left;
+}
+.table td{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+   border-radius: 20px;
+	text-align: left;
+   width:100%;
+   
+}
+.table tbody{
+	background: rgba(85, 199, 44, 0.7)
+}
+
+
+.col_id{
+   width: 40px;
+   text-align: center;
+}
+.col_img{
+   width: 110px;
+}
+.col_name{
+   width: 250px;
+}
+
+.col2{
+   width:120px;
+} 
+
+/* td img{
+   width: 100px;
+} */
+
+.col_pencil{
+width: 40px;
+} 
+
+
+
+
+
+
+.room{
+   color: #1ab122;
+   padding: 20px 0px;
+}
+
+textarea{
+   width: 100%;
+   background: none;
+   height:fit-content;
+   font-size: 18px;
+   padding: 15px 0px;
+}
+.td_room textarea{
+   height: 150px;
+}
+.td_desc textarea{
+   height: 150px;
+}
+
+td img{
+   width: 100%;
+}
+
+.redact{
+   width: 100%;
+   font-size: 20px;
+   background: none;
+}
+
